@@ -1,0 +1,2 @@
+# GitHub Developer Profile Generator
+This project is a simple Python script that uses a class called `Profile` to generate a mini developer profile card. It's designed to demonstrate the use of Python classes, attributes (including lists), and methods to produce formatted output.
