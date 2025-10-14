@@ -54,7 +54,9 @@ class Student(Person):
     pass
 
 class Lecturer(Person):
-    pass
+    def __init__(self,name,department):
+        super().__init__(name)
+        self.department=department
 
 p =Person("Mark")
 s =Student("Martha")
@@ -63,3 +65,5 @@ l =Lecturer("Noah")
 print(p.intro())
 print(s.intro())
 print(l.intro())
+
+
