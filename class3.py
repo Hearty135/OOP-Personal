@@ -51,19 +51,29 @@ class Person:
 
 
 class Student(Person):
-    pass
+    def __init__(self,name,program):
+        super().__init__(name)
+        self.program = program
+
+    def intro(self):
+        return super().intro()+f", and my program is {self.program}"
 
 class Lecturer(Person):
     def __init__(self,name,department):
         super().__init__(name)
         self.department=department
 
+    def intro(self):
+        return super().intro()+f", and i work in the {self.department} department"
+
 p =Person("Mark")
-s =Student("Martha")
-l =Lecturer("Noah")
+s =Student("Martha","BSIT",2)
+l =Lecturer("Noah","Data Science")
 
 print(p.intro())
 print(s.intro())
 print(l.intro())
+
+
 
 
